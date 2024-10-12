@@ -7,7 +7,7 @@ class LoginPage {
     }
   
     async acessarPaginaLogin() {
-      await this.page.goto('http://165.227.93.41/lojinha-web/v2/'); // Acessa a URL de login
+      await this.page.goto('/lojinha-web/v2/'); // Acessa a URL de login
     }
   
     async fazerLogin(username, password) {

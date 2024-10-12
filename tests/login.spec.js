@@ -8,7 +8,7 @@ test.describe('Login Tests', () => {
     await loginPage.fazerLogin('admin', 'admin');
 
     // Verifica se a URL após o login é a esperada
-    await expect(page).toHaveURL('http://165.227.93.41/lojinha-web/v2/produto'); 
+    await expect(page).toHaveURL('/lojinha-web/v2/produto'); 
     await expect(page.locator('text=Boas vindas, admin!')).toBeVisible();
   });
 
